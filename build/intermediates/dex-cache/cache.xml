@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Nug\AndroidStudioProjects\JobPostings\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="C:\Users\Nug\AndroidStudioProjects\JobPostings\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-af612f9a65c82c8cf33c926ef3bddad6f31228a9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nug\AndroidStudioProjects\JobPostings\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="C:\Users\Nug\AndroidStudioProjects\JobPostings\app\build\intermediates\pre-dexed\debug\classes-33b8413a87cd52078dbdbef94f470c26924d0c4a.jar" />
+    </item>
+    <item
+        jar="E:\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="C:\Users\Nug\AndroidStudioProjects\JobPostings\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-748fd4651c7c824a039deb608aa9d75a45cb1e44.jar" />
+    </item>
+
+</items>

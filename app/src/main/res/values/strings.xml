@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JobPostings</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+     <string-array name="region_array">
+        <item>Lower Hudson Valley</item>
+        <item>Mohawk Valley</item>
+        <item>Capital</item>
+        <item>Central</item>
+        <item>Mid-Hudson Valley</item>
+        <item>Long Island</item>
+        <item>Northern</item>
+        <item>Southern</item>
+        <item>Western Central</item>
+    </string-array>
+
+</resources>
