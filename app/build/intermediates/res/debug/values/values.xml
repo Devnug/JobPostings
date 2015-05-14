@@ -13,6 +13,10 @@
         <item>Southern</item>
         <item>Western Central</item>
     </string-array>
+    <!-- From: file:/C:/Users/Nug/AndroidStudioProjects/JobPostings/app/src/main/res/values/color.xml -->
+    <eat-comment/>
+    <color name="white">#FFFFFF</color>
+    <declare-styleable name="StaggeredGridView"><attr format="integer" name="column_count"/><attr format="integer" name="column_count_portrait"/><attr format="integer" name="column_count_landscape"/><attr format="dimension" name="item_margin"/><attr format="dimension" name="grid_paddingLeft"/><attr format="dimension" name="grid_paddingRight"/><attr format="dimension" name="grid_paddingTop"/><attr format="dimension" name="grid_paddingBottom"/></declare-styleable>
     <!-- From: file:/C:/Users/Nug/AndroidStudioProjects/JobPostings/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>

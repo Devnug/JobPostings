@@ -24,6 +24,8 @@ ADDED from AndroidManifest.xml:8:5
 application
 ADDED from AndroidManifest.xml:10:5
 MERGED from com.android.support:support-v4:20.0.0:17:5
+MERGED from com.etsy.android.grid:library:1.0.5:6:5
+MERGED from com.android.support:support-v4:20.0.0:17:5
 	android:label
 		ADDED from AndroidManifest.xml:13:9
 	android:allowBackup
@@ -50,6 +52,8 @@ ADDED from AndroidManifest.xml:21:17
 		ADDED from AndroidManifest.xml:21:27
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
+MERGED from com.android.support:support-v4:20.0.0:16:5
+MERGED from com.etsy.android.grid:library:1.0.5:4:5
 MERGED from com.android.support:support-v4:20.0.0:16:5
 	android:targetSdkVersion
 		INJECTED from AndroidManifest.xml:0:0

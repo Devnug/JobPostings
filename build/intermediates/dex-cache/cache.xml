@@ -2,6 +2,13 @@
 <items version="2" >
 
     <item
+        jar="C:\Users\Nug\AndroidStudioProjects\JobPostings\app\build\intermediates\exploded-aar\com.etsy.android.grid\library\1.0.5\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8218789edb56bdcfff7da48e892b37460fc707e2">
+        <dex dex="C:\Users\Nug\AndroidStudioProjects\JobPostings\app\build\intermediates\pre-dexed\debug\classes-6108f7297ffca87d8995863d59a5055d004d329c.jar" />
+    </item>
+    <item
         jar="C:\Users\Nug\AndroidStudioProjects\JobPostings\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
         jumboMode="false"
         revision="20.0.0"

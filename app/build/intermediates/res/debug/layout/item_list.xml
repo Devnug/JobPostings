@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="?android:attr/listPreferredItemHeight"
-
+    android:background="@color/white"
     android:padding="6dip">
     <!-- School Name -->
    <TextView
@@ -17,7 +17,6 @@
 		android:textStyle="bold"
 		android:singleLine="true"
 		android:ellipsize="marquee"
-		android:text="test"
    />
 
        <!-- Actual School Name Data -->
@@ -30,10 +29,10 @@
 		android:layout_alignParentRight="true"
 		android:layout_alignParentTop="true"
 		android:layout_toRightOf="@id/toptext"
+        android:textStyle="bold"
 
 		android:singleLine="true"
 		android:ellipsize="marquee"
-		android:text="test"
    />
 
    <!-- Desc Tag -->
@@ -48,7 +47,6 @@
 
 	 	android:textStyle="bold"
 	 	android:gravity="center_vertical"
-	 	android:text="test"
    	/>
 
    	       <!-- Actual Desc Data -->
@@ -62,7 +60,7 @@
        android:layout_below="@id/toptext"
        android:layout_toRightOf="@id/middletext"
        android:gravity="center_vertical"
-       android:text="test" />
+       android:textStyle="italic"/>
 
    	<!-- Long Desc Tag -->
 
@@ -90,5 +88,6 @@
           android:singleLine="false"
           android:text="descTagTest"
           android:visibility="gone" />
+
 
 </RelativeLayout><!-- From: file:/C:/Users/Nug/AndroidStudioProjects/JobPostings/app/src/main/res/layout/item_list.xml -->

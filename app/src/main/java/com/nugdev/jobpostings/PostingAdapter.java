@@ -95,13 +95,13 @@ public class PostingAdapter<T> extends ArrayAdapter<T> implements Filter {
 			// check to see if each individual textview is null.
 			// if not, assign some text!
 			if (tt != null){
-				tt.setText("School: ");
+
 			}
 			if (ttd != null){
 				ttd.setText(i.getSchool());
 			}
 			if (mt != null){
-				mt.setText("Posting: ");
+
 			}
 			if (mtd != null){
 				mtd.setText(i.getQuickDesc());

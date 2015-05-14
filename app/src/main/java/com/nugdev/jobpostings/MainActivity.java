@@ -50,6 +50,7 @@ public class MainActivity extends Activity implements OnNavigationListener {
 	public final String DEBUG_TAG = "JobPostings";
 	public int regionCode = 6;
 	public JobFragment jobFragment = new JobFragment();
+	public JobPosting jobPosting = new JobPosting();
 	public static ArrayList<Posting> data = new ArrayList<Posting>();
 	public Posting[] data2;
 	
@@ -94,6 +95,12 @@ public class MainActivity extends Activity implements OnNavigationListener {
 		   FragmentTransaction transaction = manager.beginTransaction();
 			      jobFragment = (JobFragment) manager.getFragment(inState, jobFragment.DEBUG_TAG);
 			  
+	}
+	private void instantiateJobPostingFragments(Bundle inState) {
+		FragmentManager manager = getFragmentManager();
+		FragmentTransaction transaction = manager.beginTransaction();
+		jobPosting = (JobPosting) manager.getFragment(inState, JobPosting.DEBUG_TAG);
+
 	}
 				
 	public void updateList() {

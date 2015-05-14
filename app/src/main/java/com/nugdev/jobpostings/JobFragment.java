@@ -22,6 +22,7 @@ import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -45,6 +46,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
 
+import com.etsy.android.grid.StaggeredGridView;
+
 public class JobFragment extends Fragment implements OnClickListener{
 
 	public static final String ARG_SECTION_NUMBER = "section_number";
@@ -53,6 +56,7 @@ public class JobFragment extends Fragment implements OnClickListener{
 	
 	//public ArrayList<String> data;
 	public static ListView lv1;
+	public static StaggeredGridView gridView;
 	static ArrayAdapter<Posting> adapter;
 	EditText edt;
 	Spinner typeSpinner;
@@ -75,20 +79,27 @@ public class JobFragment extends Fragment implements OnClickListener{
         //adapter = new ArrayAdapter<String>(v.getContext(), android.R.layout.simple_list_item_1, MainActivity.data);
         //adapter = new CustomAdapter<String>(v.getContext(), android.R.layout.simple_list_item_1,data);
         adapter = new PostingAdapter<Posting>(v.getContext(), android.R.layout.simple_list_item_1,MainActivity.data);
-        lv1 = (ListView)v.findViewById(R.id.ListView01);    
-        lv1.setAdapter(adapter);
+        gridView = (StaggeredGridView)v.findViewById(R.id.grid_view);
+        gridView.setAdapter(adapter);
         //container.addView(v);
         //setListAdapter(adapter);
-        lv1.setOnItemClickListener(new OnItemClickListener() {
+        gridView.setOnItemClickListener(new OnItemClickListener() {
 			  public void onItemClick(AdapterView<?> parent, View view,
 			      int position, long id) {
 				  	
-				  	// Refresh specific item in Listview to either show or hide description of the job
-				  	((PostingAdapter<Posting>) parent.getAdapter()).changeState(view, position);		
+				  // Refresh specific item in Listview to either show or hide description of the job
+				  ((PostingAdapter<Posting>) parent.getAdapter()).changeState(view, position);
+
+				  //Call new fragment to show info and link to website
+				  Bundle bundle = new Bundle();
+				  bundle.putString("school", ((Posting)gridView.getItemAtPosition(position)).getSchool());
+				  bundle.putString("posting", ((Posting)gridView.getItemAtPosition(position)).getQuickDesc());
+				  bundle.putString("desc", ((Posting)gridView.getItemAtPosition(position)).getDesc());
+				  bundle.putString("link", ((Posting)gridView.getItemAtPosition(position)).getLink());
 			  	}
 			}); 
         
-        lv1.setTextFilterEnabled(true);
+        gridView.setTextFilterEnabled(true);
         
         edt = (EditText) v.findViewById(R.id.SearchText);
         //edt.setText(" ");
@@ -135,12 +146,12 @@ public class JobFragment extends Fragment implements OnClickListener{
 		v = inflater.inflate(R.layout.datalist, null); 
         adapter = new PostingAdapter<Posting>(v.getContext(), R.layout.item_list, MainActivity.data);
         //adapter = new CustomAdapter<String>(v.getContext(), android.R.layout.simple_list_item_1,data);
-        lv1 = (ListView)v.findViewById(R.id.ListView01);    
-        lv1.setAdapter(adapter);
+        gridView = (StaggeredGridView)v.findViewById(R.id.grid_view);
+        gridView.setAdapter(adapter);
         //container.addView(v);
         //setListAdapter(adapter);
         
-        lv1.setTextFilterEnabled(true);
+        gridView.setTextFilterEnabled(true);
 	}
 	
 	@Override
