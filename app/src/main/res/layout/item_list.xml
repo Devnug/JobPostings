@@ -33,6 +33,7 @@
 
 		android:singleLine="true"
 		android:ellipsize="marquee"
+        android:fontFamily="sans-serif"
    />
 
    <!-- Desc Tag -->
@@ -60,7 +61,8 @@
        android:layout_below="@id/toptext"
        android:layout_toRightOf="@id/middletext"
        android:gravity="center_vertical"
-       android:textStyle="italic"/>
+       android:textStyle="italic"
+       android:fontFamily="sans-serif"/>
 
    	<!-- Long Desc Tag -->
 

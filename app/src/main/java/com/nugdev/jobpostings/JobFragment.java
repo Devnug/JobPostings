@@ -65,7 +65,7 @@ public class JobFragment extends Fragment implements OnClickListener{
 	
 	@SuppressWarnings("unchecked")
 	@Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater,final ViewGroup container,Bundle savedInstanceState) {
         /** Creating an array adapter to store the list of countries **/
 		//data = new ArrayList<String>();
 		//refreshList();
@@ -96,6 +96,7 @@ public class JobFragment extends Fragment implements OnClickListener{
 				  bundle.putString("posting", ((Posting)gridView.getItemAtPosition(position)).getQuickDesc());
 				  bundle.putString("desc", ((Posting)gridView.getItemAtPosition(position)).getDesc());
 				  bundle.putString("link", ((Posting)gridView.getItemAtPosition(position)).getLink());
+				  instantiateJobPostingFragments(bundle);
 			  	}
 			}); 
         
