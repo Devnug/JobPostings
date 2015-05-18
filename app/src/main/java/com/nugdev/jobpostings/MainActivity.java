@@ -50,7 +50,7 @@ public class MainActivity extends Activity implements OnNavigationListener {
 	public final String DEBUG_TAG = "JobPostings";
 	public int regionCode = 6;
 	public JobFragment jobFragment = new JobFragment();
-	public JobPosting jobPosting = new JobPosting();
+	public static JobPosting jobPosting = new JobPosting();
 	public static ArrayList<Posting> data = new ArrayList<Posting>();
 	public Posting[] data2;
 	

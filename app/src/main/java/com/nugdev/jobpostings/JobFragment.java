@@ -96,7 +96,11 @@ public class JobFragment extends Fragment implements OnClickListener{
 				  bundle.putString("posting", ((Posting)gridView.getItemAtPosition(position)).getQuickDesc());
 				  bundle.putString("desc", ((Posting)gridView.getItemAtPosition(position)).getDesc());
 				  bundle.putString("link", ((Posting)gridView.getItemAtPosition(position)).getLink());
-				  instantiateJobPostingFragments(bundle);
+				  JobPosting toFragment = new JobPosting();
+				  toFragment.setArguments(bundle);
+				  getFragmentManager()
+						  .beginTransaction()
+						  .replace(R.id.data_list, toFragment).commit();
 			  	}
 			}); 
         
